@@ -1,15 +1,32 @@
 {
   "name": "chinnu-countries",
   "version": "1.0.0",
+  "type": "module",
   "description": "This package returns countrylist",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production"
   },
   "keywords": [
     "hook",
     "react"
   ],
   "author": "chinnu",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chinnustudies1/chinnu-countries"
+  },
+  "bugs": {
+    "url": "https://github.com/chinnustudies1/chinnu-countries/issues"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "rollup": "^4.18.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
